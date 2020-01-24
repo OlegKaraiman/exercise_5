@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      var numb = prompt("vv1", "");
+      var symb = prompt("vv2", "");
+      getImg(numb, symb);
+      function getImg(c, d) {
+        sumb = symb + "";
+        if (sumb.length === 1) {
+          var triangle = ""; //Пустая строка для результата
+          for (var a = 0; a <= numb; a++) {
+            //Главный цикл отработывает по количеству строк
+            triangle += "\n"; //перенос строки
+
+            for (var b = 0; b < a; b++) {
+              //Второй цикл по эелементам в сторе в завизимости от кол строк (а)
+              triangle += symb; //элементы в строке
+            }
+          }
+          alert(triangle);
+        } else {
+          alert("Введите один символ!");
+        }
+      }
+    </script>
+  </body>
+</html>
